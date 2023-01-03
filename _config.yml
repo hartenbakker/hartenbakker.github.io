@@ -9,6 +9,9 @@ sass:
   indentWidth: 4
   style: compact
   precision: 10
+  load_paths:
+    - _sass
+    - node_modules
 
 google_analytics_id: false # replace with "UA-XXXX"
 

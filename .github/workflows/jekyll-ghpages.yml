@@ -21,7 +21,7 @@ jobs:
       with:
         valueFile: '_config.yml'
         propertyPath: 'baseurl'
-        value: /
+        value: /jekyll-atlantic-theme/
         commitChange: false
         updateFile: true
       
