@@ -1,0 +1,28 @@
+{% assign heading = include.heading %}
+{% assign description = include.description %}
+{% assign align = include.align %}
+{% assign date = include.date %}
+
+<div class="p-6 md:py-12 h-full flex items-center justify-center">
+<!--  {% if date %}-->
+<!--  <div class="font-medium text-gray-700">{{ date | date_to_long_string }}</div>-->
+<!--  {% endif %}-->
+<!--  <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">-->
+<!--    {{ heading }}-->
+<!--  </h1>-->
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+    <div class="col-span-1 flex items-center justify-center">
+      <img src="/assets/images/logo/logo.png" alt="{{ site.title }}" />
+    </div>
+    <div class="col-span-1 prose md:content-end">
+      <p>Hartenbakker vzw is een nieuw arbeidszorginitiatief in de Stadsboerderij van Turnhout. Vanaf februari 2023 starten we met begeleid werk voor mensen met een beperking.</p>
+
+      <p>Hartenbakker is erkend door het VAPH als aanbieder Rechtstreeks Toegankelijke Hulp.</p>
+
+      <p>Hartenbakker start met een klein hartje. Help ons groeien en kom proeven van ons brood of van ons aanbod. Interesse als klant, als cliënt, als vrijwilliger of medewerker: <a href="mailto:hartenbakker@gmail.com">hartenbakker@gmail.com</a>.</p>
+    </div>
+  {% if description %}
+  <h2 class="text-xl text-gray-600 mt-2">{{ description }}</h2>
+  {% endif %}
+</div>

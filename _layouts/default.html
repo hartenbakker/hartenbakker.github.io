@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    {% include meta.html %}
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body class="page h-full {{page.bodyClass}}">
+<!--    {% include mobile-menu.html %}-->
+<div class="flex min-h-screen h-full w-full items-center justify-center">
+    <div class="container mx-auto">
+<!--      {% include header.html %}-->
+      {{content}}
+<!--      {% include footer.html %}-->
+    </div>
+</div>
+<!--    {% include google-analytics.html %}-->
+<!--    <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>-->
+  </body>
+</html>
